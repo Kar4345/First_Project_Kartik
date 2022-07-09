@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        
+        form{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            height: 950px;
+        }
+        h1{
+            -webkit-text-stroke: 0.2px black; 
+        }
+        div{
+            padding: 6px;
+        }
+        div.first{
+          margin-bottom: 20px;
+            /* text-decoration: underline; */
+            font-size: 16px;
+            margin-right: 20px;
+            border-bottom: 1px solid  black;
+        }
+       div.main{
+        width: 420px;
+        height: 950px;
+        padding-left: 20px;
+        /* margin-left: 30%; */
+        border: 2px solid black;
+        box-shadow: 10px 10px 20px black;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        color: antiquewhite;
+        border-radius: 20px;
+
+       }
+    
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        background: lightgrey;
+        background-size: 100%;       
+        background-repeat: no-repeat;
+      }
+      
+      input:hover{
+        box-shadow: 3px 3px 10px black;
+        
+      }
+     input{
+        width: 75%;
+        
+        margin-top: 5px;
+     }
+      
+      select{
+        width: 77%;
+        height: 68%;
+        margin-top: 5px;
+      }
+     input[type=radio]{
+        width: auto;
+        cursor: pointer;
+     }
+     a{
+        color: beige;
+     }
+     #reference{
+        position: relative;
+        bottom: 0;
+        
+     }
+     #me{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 5px;
+        width: 75%;
+     }
+     #me:hover{
+        box-shadow: 3px 3px 10px black;
+     }
+     #buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     select:hover{
+        box-shadow: 3px 3px 10px black;
+        cursor: pointer;
+     }
+     #submit{
+       height: 35px;
+        width: 200px;
+        margin-left: -10px;
+        border-radius: 20px;
+        color:white;
+        background:rgb(244, 114, 85);
+        cursor: pointer;
+     }
+     #reset{
+        height: 35px;
+        width: 200px;
+        margin-left: 10px;
+        border-radius: 20px;
+        color: white;
+        background:rgb(244, 114, 85);
+        cursor: pointer;
+     }
+     #reset:hover{
+        font-weight: 900;
+        color: black;
+     }
+     #submit:hover{
+        font-weight: 900;
+        color: black;
+     }
+     #describe-me{
+        margin-bottom: 40px;
+        margin-top: 5px;
+     }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1 >Registration Form</h1>
+    <div class="first">
+       Please fill up this form with information related to user only. 
+    </div>
+    
+        <form>
+            <div>
+                <label for="fullname" id="fullname">Full Name:</label><br>
+                <span>
+                    <input type="text" class="text1" placeholder="First" required>
+                </span>
+               <span>
+                <input type="text" class="text2" placeholder="Last" required>
+               </span>
+            </div>
+            <div>
+                <label for="age" id="age">Age:</label><br>
+                <input type="number" size="10" min="18" max="120" placeholder="Age in years" required>
+            </div>
+            <div>
+                <label for="dob" id="dob">Date Of Birth:</label><br>
+                <input type="date" required>
+            </div>
+            <div>
+                <label for="gender" id="gender">Gender:</label><br>
+                <span>
+                <input type="radio" id="male">Male
+                <input type="radio" id="female">Female
+                <input type="radio" id="others">Other
+            </span>
+            </div>
+            <div>
+                <label for="email" id="email">Email:</label><br>
+                <input type="email" name="" id="email" size="34" placeholder="example@gmail.com" required>
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" minlength="8" placeholder="create a password" required>
+            </div>
+           <div>
+            <label for="phone" id="phone">Phone:</label><br>
+            <input type="tel" class="tel" minlength="10" maxlength="10">
+           </div>
+           <div>
+            <label for="qualification" id="qualfication">Qualification:</label><br>
+            <select id="education">
+                <option value="diploma">Diploma</option>
+                <option value="ug">Under Graduate</option>
+                <option value="pg">Post Graduate</option>
+            </select>
+            
+           </div>
+            
+            <div id="describe-me">
+                <span>
+                <label for="describe">Describe Yourself:</label><br>
+                <textarea id="me" cols="30" rows="10" placeholder="decribe..."></textarea>
+                </span>
+            </div>
+            <div>
+                <span id="buttons">
+                    <input type="submit" name="Submit" id="submit">
+                    <input type="reset" name="Reset" id="reset">
+                </span>
+            </div>
+            <div id="reference">
+                <a href="https://google.com" target="_blank">Need help?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container{
+            justify-content: center;
+            padding: 0;
+            width: 320px;
+            /* height: 400px; */
+            background: azure;
+            border: 1px solid black;
+            box-shadow: 1px 1px 5px black;
+            /* background:radial-gradient(blue,rgb(70 100 255),cyan,aquamarine,lightblue); */
+           color: rgb(203, 46, 11);
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-size: 19px;
+           border-radius: 20px;
+           box-shadow: 10px 10px 20px black;
+        }
+        
+        form{
+           padding: 20px;
+           height: 400px;
+           position: relative;
+           display: flex;
+           flex-direction: column; 
+           
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            border-bottom: 2px solid black;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 5px;
+        }
+        #username{
+            margin-bottom: 20px;
+        }
+        #password{
+            margin-bottom: 20px;
+        }
+        input{
+            border-top:0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid black;
+            background: azure;
+            margin-bottom: 20px;
+            
+        }
+        .button{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 30px;
+        }
+        input:hover{
+            background: rgb(244, 242, 242);
+            box-shadow: 2px 2px 2px black;
+        }
+        button{
+            box-shadow: 1px 1px 2px black;
+            width: 100px;
+            height: 100%;
+            border-radius: 12px;
+            font-weight: 700;
+        }
+        #reference{
+            display: flex;
+            position: relative;
+            /* margin-top:30%; */
+            margin-top: auto;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        a{
+            margin-left: 10px;
+        }
+        
+
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(aquamarine, aqua); /* Fallback */
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">
+            Login
+        </h1>
+        <div class="form">
+        <form>
+            <div>
+                <label for="username" id="username">Username:</label><br>
+                <input type="text" id="uname" placeholder="type your username" minlength="5" required>
+            </div>
+            <div>
+                <label for="password" id="password">Password:</label><br>
+                <input type="password" name="passcode" id="passcode" placeholder="type your password" minlength="8" required>
+            </div>
+            <div class="button">
+            <button type="submit">Login</button>
+            </div>
+            <div id="reference">
+              <p>  Or sign up using <a href="./register_form.html" >Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
